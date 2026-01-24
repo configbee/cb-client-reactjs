@@ -1,6 +1,6 @@
 {
   "name": "configbee-react",
-  "version": "0.0.3-alpha.1",
+  "version": "0.0.3",
   "description": "Configbee ReactJS SDK",
   "directories": {
     "example": "examples"
