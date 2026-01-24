@@ -1,6 +1,20 @@
 # ConfigBee React SDK
+Dynamic feature flags and configuration management for React applications.
 
-The ConfigBee React SDK allows you to easily integrate ConfigBee into your React-based projects to manage configurations and feature flags dynamically.
+[Website](https://configbee.com) | [Documentation](https://docs.configbee.com) | [React SDK Docs](https://docs.configbee.com/client-sdks/react/)
+
+## About
+
+The ConfigBee React SDK allows you to easily integrate ConfigBee into your React-based projects to manage configurations and feature flags dynamically. Control your app's behavior without redeploying.
+
+### Key Features
+
+- 🚀 Easy integration with React and Next.js
+- 🎯 User targeting and segmentation
+- 🔄 Real-time configuration updates
+- 📊 Multiple value types (flags, numbers, text, JSON)
+- ⚡ Lightweight and performant
+
 
 ## Installation
 
@@ -13,6 +27,8 @@ yarn add configbee-react
 ```
 
 ## Usage
+
+> 💡 **For the most up-to-date documentation, visit [docs.configbee.com/client-sdks/react/](https://docs.configbee.com/client-sdks/react/)**
 
 ### ConfigBeeProvider and Layout Setup
 
