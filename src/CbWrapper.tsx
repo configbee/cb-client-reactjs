@@ -1,6 +1,7 @@
 import React,{PropsWithChildren, useState, useEffect} from "react";
 import ConfigbeeClient from "configbee-client-core";
 import { CbContext,CbContextType } from "./context";
+import { SDK_VERSION } from "./version";
 
 
 export interface CbWrapperProps{
@@ -40,7 +41,9 @@ const CbWrapper:React.FC<PropsWithChildren<CbWrapperProps>> = ( {
                 accountId: accountId, projectId: projectId, environmentId:environmentId,
                 targetProperties: targetProperties,
                 onReady: ()=>{refreshFromClient(createdClient)},
-                onUpdate: ()=>{refreshFromClient(createdClient)}
+                onUpdate: ()=>{refreshFromClient(createdClient)},
+                subSdkName: "cb-client-reactjs",
+                subSdkVersion: SDK_VERSION
             }
             if(customSources){
                 initParams.sources = customSources
