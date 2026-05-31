@@ -1,13 +1,14 @@
 {
   "name": "configbee-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Configbee ReactJS SDK",
   "directories": {
     "example": "examples"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "generate-version": "node scripts/generate-version.js",
+    "build": "npm run generate-version && tsc",
     "prod-build": "rm -rf dist && npm run build",
     "build-and-publish-alpha": "npm run prod-build && npm publish --tag alpha"
   },
@@ -30,7 +31,7 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
-    "configbee-client-core": "^0.0.2"
+    "configbee-client-core": "^0.0.3"
   },
   "devEngines": {
     "runtime": {
